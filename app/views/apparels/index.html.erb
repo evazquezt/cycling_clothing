@@ -1,0 +1,66 @@
+<h1>Apparels</h1>
+
+<p><%= link_to 'Add a New Apparel', new_apparel_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Min1</th>
+      <th>Max1</th>
+      <th>Min2</th>
+      <th>Max2</th>
+      <th>Min3</th>
+      <th>Max3</th>
+      <th>Min4</th>
+      <th>Max4</th>
+      <th>Min5</th>
+      <th>Max5</th>
+      <th>Min6</th>
+      <th>Max6</th>
+      <th>Min7</th>
+      <th>Max7</th>
+      <th>Min8</th>
+      <th>Max8</th>
+      <th>Min9</th>
+      <th>Max9</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @apparels.each do |apparel| %>
+    <tr>
+      <td><%= apparel.section %></td>
+      <td><%= apparel.item %></td>
+      <td><%= apparel.description %></td>
+      <td><%= apparel.min1 %></td>
+      <td><%= apparel.max1 %></td>
+      <td><%= apparel.min2 %></td>
+      <td><%= apparel.max2 %></td>
+      <td><%= apparel.min3 %></td>
+      <td><%= apparel.max3 %></td>
+      <td><%= apparel.min4 %></td>
+      <td><%= apparel.max4 %></td>
+      <td><%= apparel.min5 %></td>
+      <td><%= apparel.max5 %></td>
+      <td><%= apparel.min6 %></td>
+      <td><%= apparel.max6 %></td>
+      <td><%= apparel.min7 %></td>
+      <td><%= apparel.max7 %></td>
+      <td><%= apparel.min8 %></td>
+      <td><%= apparel.max8 %></td>
+      <td><%= apparel.min9 %></td>
+      <td><%= apparel.max9 %></td>
+      <td><%= link_to 'Show', apparel_url(apparel) %></td>
+      <td><%= link_to 'Edit', edit_apparel_url(apparel) %></td>
+      <td><%= link_to 'Destroy', apparel_url(apparel), method: 'delete', data: { confirm: "Do you really want to delete this apparel?" } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

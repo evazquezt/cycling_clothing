@@ -1,0 +1,112 @@
+<h1>Editing Apparel #<%= @apparel.id %></h1>
+
+<%= form_tag(apparel_url(@apparel), method: 'patch') do %>
+  <div>
+    <%= label_tag :section %><br />
+    <%= text_field_tag :section, @apparel.section %>
+  </div>
+
+  <div>
+    <%= label_tag :item %><br />
+    <%= text_field_tag :item, @apparel.item %>
+  </div>
+
+  <div>
+    <%= label_tag :description %><br />
+    <%= text_field_tag :description, @apparel.description %>
+  </div>
+
+  <div>
+    <%= label_tag :min1 %><br />
+    <%= text_field_tag :min1, @apparel.min1 %>
+  </div>
+
+  <div>
+    <%= label_tag :max1 %><br />
+    <%= text_field_tag :max1, @apparel.max1 %>
+  </div>
+
+  <div>
+    <%= label_tag :min2 %><br />
+    <%= text_field_tag :min2, @apparel.min2 %>
+  </div>
+
+  <div>
+    <%= label_tag :max2 %><br />
+    <%= text_field_tag :max2, @apparel.max2 %>
+  </div>
+
+  <div>
+    <%= label_tag :min3 %><br />
+    <%= text_field_tag :min3, @apparel.min3 %>
+  </div>
+
+  <div>
+    <%= label_tag :max3 %><br />
+    <%= text_field_tag :max3, @apparel.max3 %>
+  </div>
+
+  <div>
+    <%= label_tag :min4 %><br />
+    <%= text_field_tag :min4, @apparel.min4 %>
+  </div>
+
+  <div>
+    <%= label_tag :max4 %><br />
+    <%= text_field_tag :max4, @apparel.max4 %>
+  </div>
+
+  <div>
+    <%= label_tag :min5 %><br />
+    <%= text_field_tag :min5, @apparel.min5 %>
+  </div>
+
+  <div>
+    <%= label_tag :max5 %><br />
+    <%= text_field_tag :max5, @apparel.max5 %>
+  </div>
+
+  <div>
+    <%= label_tag :min6 %><br />
+    <%= text_field_tag :min6, @apparel.min6 %>
+  </div>
+
+  <div>
+    <%= label_tag :max6 %><br />
+    <%= text_field_tag :max6, @apparel.max6 %>
+  </div>
+
+  <div>
+    <%= label_tag :min7 %><br />
+    <%= text_field_tag :min7, @apparel.min7 %>
+  </div>
+
+  <div>
+    <%= label_tag :max7 %><br />
+    <%= text_field_tag :max7, @apparel.max7 %>
+  </div>
+
+  <div>
+    <%= label_tag :min8 %><br />
+    <%= text_field_tag :min8, @apparel.min8 %>
+  </div>
+
+  <div>
+    <%= label_tag :max8 %><br />
+    <%= text_field_tag :max8, @apparel.max8 %>
+  </div>
+
+  <div>
+    <%= label_tag :min9 %><br />
+    <%= text_field_tag :min9, @apparel.min9 %>
+  </div>
+
+  <div>
+    <%= label_tag :max9 %><br />
+    <%= text_field_tag :max9, @apparel.max9 %>
+  </div>
+
+  <div>
+    <%= submit_tag "Update Apparel" %>
+  </div>
+<% end %>

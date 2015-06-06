@@ -1,0 +1,112 @@
+<h1>New Apparel</h1>
+
+<%= form_tag(apparels_url, method: 'post') do %>
+  <div>
+    <%= label_tag :section %><br />
+    <%= text_field_tag :section %>
+  </div>
+
+  <div>
+    <%= label_tag :item %><br />
+    <%= text_field_tag :item %>
+  </div>
+
+  <div>
+    <%= label_tag :description %><br />
+    <%= text_area_tag :description, nil, rows: 10, cols: 110 %>
+  </div>
+
+  <div>
+    <%= label_tag :min1 %><br />
+    <%= text_field_tag :min1 %>
+  </div>
+
+  <div>
+    <%= label_tag :max1 %><br />
+    <%= text_field_tag :max1 %>
+  </div>
+
+  <div>
+    <%= label_tag :min2 %><br />
+    <%= text_field_tag :min2 %>
+  </div>
+
+  <div>
+    <%= label_tag :max2 %><br />
+    <%= text_field_tag :max2 %>
+  </div>
+
+  <div>
+    <%= label_tag :min3 %><br />
+    <%= text_field_tag :min3 %>
+  </div>
+
+  <div>
+    <%= label_tag :max3 %><br />
+    <%= text_field_tag :max3 %>
+  </div>
+
+  <div>
+    <%= label_tag :min4 %><br />
+    <%= text_field_tag :min4 %>
+  </div>
+
+  <div>
+    <%= label_tag :max4 %><br />
+    <%= text_field_tag :max4 %>
+  </div>
+
+  <div>
+    <%= label_tag :min5 %><br />
+    <%= text_field_tag :min5 %>
+  </div>
+
+  <div>
+    <%= label_tag :max5 %><br />
+    <%= text_field_tag :max5 %>
+  </div>
+
+  <div>
+    <%= label_tag :min6 %><br />
+    <%= text_field_tag :min6 %>
+  </div>
+
+  <div>
+    <%= label_tag :max6 %><br />
+    <%= text_field_tag :max6 %>
+  </div>
+
+  <div>
+    <%= label_tag :min7 %><br />
+    <%= text_field_tag :min7 %>
+  </div>
+
+  <div>
+    <%= label_tag :max7 %><br />
+    <%= text_field_tag :max7 %>
+  </div>
+
+  <div>
+    <%= label_tag :min8 %><br />
+    <%= text_field_tag :min8 %>
+  </div>
+
+  <div>
+    <%= label_tag :max8 %><br />
+    <%= text_field_tag :max8 %>
+  </div>
+
+  <div>
+    <%= label_tag :min9 %><br />
+    <%= text_field_tag :min9 %>
+  </div>
+
+  <div>
+    <%= label_tag :max9 %><br />
+    <%= text_field_tag :max9 %>
+  </div>
+
+  <div>
+    <%= submit_tag "Create Apparel" %>
+  </div>
+<% end %>
