@@ -3,6 +3,7 @@ require 'open-uri'
 class AutoController < ApplicationController
 
   def results
+
     @street_address = params[:user_street_address]
     url_safe_street_address = URI.encode(@street_address)
 
@@ -12,7 +13,11 @@ class AutoController < ApplicationController
     # A URL-safe version of the street address, with spaces and other illegal
     #   characters removed, is in the string url_safe_street_address.
     # ==========================================================================
+    if @street_address.blank?
 
+        redirect_to("/auto", { :alert => "You must enter a valid address!" })
+
+    else
         url = "http://maps.googleapis.com/maps/api/geocode/json?address=#{url_safe_street_address}"
 
         json_data = open(url).read
@@ -41,8 +46,7 @@ class AutoController < ApplicationController
 
         # @summary_of_next_several_days = met_data["daily"]["summary"]
 
-
-
+    end
 
   end
 

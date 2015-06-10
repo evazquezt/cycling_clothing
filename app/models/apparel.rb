@@ -1,6 +1,6 @@
 class Apparel < ActiveRecord::Base
 
-  scope :clothing_for_condition, -> (min_column, max_column, temp) { where("#{min_column} < #{temp} AND #{max_column} > #{temp}") }
+  scope :clothing_for_condition, -> (min_column, max_column, temp) { where("#{min_column} <= #{temp} AND #{max_column} >= #{temp}") }
 
   COMBINATIONS = [
     {

@@ -1,7 +1,7 @@
 class ManualController < ApplicationController
 
   def conditions
-    temp = params[:weather]
+    temp = params[:temp]
     wind = params[:wind]
     condition = params[:condition]
     if temp && wind && condition
